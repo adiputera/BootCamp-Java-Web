@@ -36,19 +36,19 @@
 						Employee emp = EmpService.readId(id);
 					%>
 					<h1>Update Employee</h1>
-					<form action='/crud_test/EmployeeEdit' method='post'>
+					<form action='/crud_test/empcontrol?action=edit' method='post'>
 						<table>
 							<% 
 								out.print("<tr><td>ID</td><td>:</td><td><input type='text' name='id' value='"+emp.getId()+"' readonly/></td></tr>");
 							%>
 							<%
-								out.print("<tr><td>Nama:</td><td><input type='text' name='nama' value='"+emp.getNama()+"'/></td></tr>");
+								out.print("<tr><td>Nama</td><td>:</td><td><input type='text' name='nama' value='"+emp.getNama()+"'/></td></tr>");
 							%>
 							<%
-								out.print("<tr><td>Alamat:</td><td><input type='text' name='alamat' value='"+emp.getAlamat()+"'/></td></tr>");
+								out.print("<tr><td>Alamat</td><td>:</td><td><input type='text' name='alamat' value='"+emp.getAlamat()+"'/></td></tr>");
 							%>
 							<%
-								out.print("<tr><td>Email:</td><td><input type='text' name='email' value='"+emp.getEmail()+"'/></td></tr>");
+								out.print("<tr><td>Email</td><td>:</td><td><input type='text' name='email' value='"+emp.getEmail()+"'/></td></tr>");
 							%>
 							<%
 								out.print("<tr><td colspan='2'><input type='submit' value='Simpan'/></td></tr>");

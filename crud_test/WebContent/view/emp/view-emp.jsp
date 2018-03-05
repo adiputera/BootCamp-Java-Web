@@ -51,12 +51,12 @@
 						<%
 							for (Employee e : list) {
 								out.print("<tr><td>" + e.getId() + "</td><td>" + e.getNama() + "</td><td>" + e.getAlamat() + "</td><td>"
-										+ e.getEmail() + "</td><td><a style='color:white;' href='edit-emp.jsp?id="+e.getId()+"'>edit</td>" + "<td><a style='color:white;' href='EmployeeDel?id="+e.getId()+"'>delete</a></td></tr>");
+										+ e.getEmail() + "</td><td><a style='color:white;' href='/crud_test/view/emp/edit-emp.jsp?id="+e.getId()+"'>edit</td>" + "<td><a style='color:white;' href='/crud_test/empcontrol?action=delete&id="+e.getId()+"'>delete</a></td></tr>");
 							}
 						%>
 					</tr>
 				</table>
-				<a href="add-emp.jsp" style="color:white;">Tambah Data</a>
+				<a href="/crud_test/view/emp/add-emp.jsp" style="color:white;">Tambah Data</a>
 			</div>
 		</div>
 		<!--end content-->

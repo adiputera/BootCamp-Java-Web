@@ -32,7 +32,7 @@
 		<div id="content">
 			<div id="isi-content">
 				<h1>Insert Employee</h1>
-				<form action="/crud_test/EmployeeAdd" method="post">
+				<form action="/crud_test/empcontrol?action=insert" method="post">
 					<table>
 						<tr>
 							<td>ID</td>

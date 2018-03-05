@@ -54,7 +54,7 @@
 						<%
 							for (Department e : list) {
 								out.print("<tr><td>" + e.getId() + "</td><td>" + e.getNamaDepartemen() + "</td><td>" + e.getAlamat() + "</td><td>"
-										+ e.getEmail() + "</td><td><a style='color:white;' href='edit-dep.jsp?id="+e.getId()+"'>edit</td>" + "<td><a style='color:white;' href='DepDel?id="+e.getId()+"'>delete</a></td></tr>");
+										+ e.getEmail() + "</td><td><a style='color:white;' href='/crud_test/view/departm/edit-dep.jsp?id="+e.getId()+"'>edit</td>" + "<td><a style='color:white;' href='/crud_test/depcontrol?action=delete&id="+e.getId()+"'>delete</a></td></tr>");
 							}
 						%>
 					</tr>

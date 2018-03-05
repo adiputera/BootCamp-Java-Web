@@ -19,7 +19,7 @@
 					<img src="/crud_test/img/logo2.png" width=115px>
 					<img src="/crud_test/img/logoacademy.png" width=100px>
 					<br>
-				<img src="img/equine-logo.jpg" width=215px>
+				<img src="/crud_test/img/equine-logo.jpg" width=215px>
 				</div>
 			</div><!--bisa 2 class dipanggil--><!--end header-->
 			<div id="menu">
@@ -39,7 +39,7 @@
 						Department dep = DepService.readId(id);
 					%>
 					<h1>Update Departemen</h1>
-					<form action='/crud_test/DepEdit' method='post'>
+					<form action='/crud_test/depcontrol?action=edit' method='post'>
 						<table>
 							<% 
 								out.print("<tr><td>ID</td><td>:</td><td><input type='text' name='id' value='"+dep.getId()+"' readonly/></td></tr>");
